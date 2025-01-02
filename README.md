@@ -92,5 +92,3 @@ Welcome to my journey through **CS50’s Introduction to Computer Science**, Har
 CS50 provided me with a robust foundation in programming and computer science, fostering skills that can be applied to real-world challenges and projects.
 
 Feel free to explore the concepts and solutions I’ve worked on throughout this course! 🚀
-```
-
