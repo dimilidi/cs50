@@ -1,11 +1,8 @@
-Here’s the README formatted in Markdown:
 
-```markdown
 # CS50’s Introduction to Computer Science
 
 Welcome to my journey through **CS50’s Introduction to Computer Science**, Harvard’s world-renowned introductory course. Below is an overview of each week’s topics, concepts, and highlights.
 
----
 
 ## 🖥️ Week 0: Scratch
 - Introduction to **Computer Science**, **Computational Thinking**, and **Problem Solving**.  
