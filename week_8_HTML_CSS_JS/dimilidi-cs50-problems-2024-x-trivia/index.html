@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- DONE: Add multiple choice question here -->
+                 <h3>Choose the correct answer among the options below:</h3>
+
+                 <pre id="log1"></pre>
+
+                 <button id="correct" class="button">Correct</button>
+                 <button id="wrong1" class="button">Wrong 1</button>
+                 <button id="wrong2" class="button">Wrong 2</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- DONE: Add free response question here -->
+                <h3>My free response question</h3>
+
+                <pre id="log2"></pre>
+
+                <input id="free-input" type="text" >
+                <button id="free-btn" type="submit">Check Answer</button>
+            </div>
+        </div>
+    </body>
+    <script>
+            // Select DOM elements
+           const btns = document.querySelectorAll(".button");
+           const input = document.querySelector("input");
+           const freeBtn = document.querySelector("#free-btn");
+           const log1 = document.querySelector("#log1");
+           const log2 = document.querySelector("#log2");
+
+            // Add event listeners to buttons to change color on click
+            btns.forEach((btn) =>  {
+                btn.addEventListener("click", handleMCAnwers);
+            });
+
+            // Function to handle MCA answers
+            function handleMCAnwers(e) {
+                // Reset bg color of buttons
+                btns.forEach((btn) => {
+                     btn.style.backgroundColor = "";
+                });
+
+                if(e.target.id == "correct"){
+                    e.target.style.backgroundColor = "green";
+                    log1.textContent = "Correct";
+                } else if((e.target.id == "wrong1" || e.target.id == "wrong2" )) {
+                    e.target.style.backgroundColor = "red";
+                    log1.textContent = "Incorrect";
+                }
+            }
+
+            // Function to handle confirm free answer
+            function handleSubmit(e) {
+                e.preventDefault();
+                const inputValue = input.value.trim();
+
+                // Check if the free response answer is correct
+                if(inputValue.toLowerCase() == "correct") {
+                    freeBtn.style.backgroundColor = "green";
+                    log2.textContent = "Correct";
+                } else {
+                    freeBtn.style.backgroundColor = "red";
+                    log2.textContent = "Incorrect";
+                }
+            }
+
+              // Add event listener to 'Check Answer' button
+              freeBtn.addEventListener("click", handleSubmit);
+    </script>
+</html>
+

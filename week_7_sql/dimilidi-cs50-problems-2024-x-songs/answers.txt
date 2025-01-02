@@ -1,0 +1,26 @@
+1. If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+
+If the database songs.db contains the top 100 songs of a listener from 2018,
+I could calculate their audio aura by calculating the average energy, valence, and danceability of the songs.
+
+Average ENERGY of songs is 0.659.
+-> The listener seems to enjoy moderately high-energy music. They like upbeat and intense music, but not too aggresive.
+
+Average VALENCE of songs is 0.484.
+-> This indicates a balance between positive and negative emotions in the listeners favourite music in 2018. They seems to like both happy and sad music
+
+Average DANCEABILITY of songs is 0.716.
+-> The high danceability score tells us that the lsitener enjoys rhythmic music that is easy to dance to.
+
+In conclusion, the litener's audio aura could be described as energetic, emotionally balanced and rhythmic.
+
+
+2. Hypothesize about why the Audio aura might not be very representative of the listener
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+
+The calculated audio aura might not fully represent the lsitener's music taste because:
+- it is focusing only on three attributes (energy, valence, and danceability) and is not considering other important factors as genre, lyrics, tempo and so on.
+- Spotify Wrapped is based on the top 100 most played songs, but the listener might have other favourite songs apart from these.
+
+To improve the accuracy we need more detailed data like genre preference, listening habits, contextual information.

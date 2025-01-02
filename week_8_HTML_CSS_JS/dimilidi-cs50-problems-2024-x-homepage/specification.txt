@@ -1,0 +1,69 @@
+Specification for Quiz Website
+
+HTML Tags
+
+<div>
+ Used to create containers for grouping related content and applying CSS styling.
+<a>
+Used for navigation links to different pages like the quiz, about, and contact pages.
+<p>
+Used for displaying text content such as instructions and quiz questions.
+<h1>
+Used for the main page heading to indicate the title of the website.
+<h2>
+Used for section headings like "About Us."
+<form>
+Used to create a structure for potential input forms for user interaction.
+<label>
+Used within forms to describe input fields for accessibility.
+<input>
+Used to capture user input such as text or radio button selections.
+<button>
+Used for interactive elements like "Next" or "Quit" buttons.
+<nav>
+Used to create a navigation bar for linking to different pages.
+
+
+CSS Selectors and Properties
+
+Selectors
+
+body
+Styled to apply a background image, overall font styles, and padding.
+h1
+Styled for font size and color to make the main title prominent.
+h2
+Styled for smaller section headings.
+.btn
+Styled for buttons, including colors, borders, and hover effects.
+form
+Styled for layout and spacing of input fields and buttons.
+
+Properties
+
+font-family
+Applied to provide consistent typography across the site.
+background-color
+Used for the container backgrounds to improve readability.
+color
+Used to set text colors for better contrast against backgrounds.
+margin
+Used to create space between elements for a clean layout.
+padding
+Used to add internal spacing within elements.
+
+
+Bootstrap
+
+Bootstrap classes were used for:
+- Buttons (btn, btn-primary, btn-secondary, etc.) to style interactive elements consistently.
+- Forms (form-group, form-control) to enhance input fields and layout without additional custom CSS.
+
+
+JavaScript
+
+JavaScript was used to add interactivity:
+- Dynamically displaying quiz questions and choices.
+- Handling button clicks to provide feedback on user answers.
+- Navigating between quiz questions using the "Next" button.
+
